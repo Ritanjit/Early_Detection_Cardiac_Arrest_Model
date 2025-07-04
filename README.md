@@ -14,7 +14,7 @@
 
 ## 🚀 Live Demo
 
-Experience the model live in a browser using [Gradio Interface](https://huggingface.co/spaces). You can paste or upload a 360-sample ECG signal and get instant heartbeat classification results:
+Experience the model live in a browser using [Gradio Interface](https://c908c6d5e34fb30145.gradio.live/). You can paste or upload a 360-sample ECG signal and get instant heartbeat classification results:
 
 **Classes:**
 
@@ -23,13 +23,6 @@ Experience the model live in a browser using [Gradio Interface](https://huggingf
 * `R`: Right bundle branch block beat
 * `A`: Atrial premature beat
 * `V`: Ventricular ectopic beat
-
-```bash
-✅ Prediction: V (Ventricular ectopic beat)
-Confidence: 0.92
-```
-
----
 
 ## 📊 Dataset
 
@@ -72,6 +65,19 @@ We built and compared the following models:
 
 Visualized comparisons are included in the notebook.
 
+### 📊 Visual Comparisons
+
+Interactive charts comparing **accuracy**, **latency**, and **model size** across the original, pruned, and quantized versions are provided in the notebook:
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/yourusername/your-repo-name/main/assets/accuracy_comparison.png" width="300"/>
+  <img src="https://raw.githubusercontent.com/yourusername/your-repo-name/main/assets/latency_comparison.png" width="300"/>
+  <img src="https://raw.githubusercontent.com/yourusername/your-repo-name/main/assets/size_comparison.png" width="300"/>
+</p>
+
+_These plots provide a clear view of trade-offs between performance and efficiency for deployment._
+
+
 ---
 
 ## 🛠 How to Use
@@ -94,22 +100,6 @@ python app.py     # Launch Gradio interface locally
 
 ```bash
 gradio deploy     # Uploads to Hugging Face Spaces
-```
-
----
-
-## 📁 Project Structure
-
-```bash
-.
-├── data/                         # Processed ECG data
-├── app.py                        # Gradio deployment script
-├── cardiac_model.h5              # Original Keras model
-├── tf_pruned_model.h5           # Pruned model
-├── tf_quantized_model.tflite    # Quantized model (for deployment)
-├── example_beat.csv             # Example input
-├── requirements.txt             # Install dependencies
-├── Early_Detection_of_Cardiac_Arrest.ipynb   # Main Colab notebook
 ```
 
 ---
