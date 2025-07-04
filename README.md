@@ -1,4 +1,5 @@
-# Early Detection of Cardiac Arrest using Deep Learning
+# <picture><source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1fac0/512.webp" type="image/webp"><img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1fac0/512.gif" alt="🫀" width="40" height="32"></picture> Early Detection of Cardiac Arrest using Deep Learning
+
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1uRpSNWPYPE__Nhhtnl6-anwPlyJU5OGz#scrollTo=vWpy8lJWN45l)
 [![Python](https://img.shields.io/badge/Python_3.10_+-3776AB?logo=python\&logoColor=white)](https://www.python.org/)
@@ -12,7 +13,7 @@
 >
 > This project implements an end-to-end pipeline for **early detection of cardiac arrest** using ECG signal classification. The system utilizes a deep learning architecture (CNN) and provides a lightweight quantized model for efficient deployment on resource-constrained edge devices.
 
-## 🚀 Live Demo
+## <picture><source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f680/512.webp" type="image/webp"><img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f680/512.gif" alt="🚀" width="25" height="25"></picture> Live Demo
 
 Experience the model live in a browser using [Gradio Interface](https://c908c6d5e34fb30145.gradio.live/). You can paste or upload a 360-sample ECG signal and get instant heartbeat classification results:
 
@@ -37,25 +38,25 @@ Experience the model live in a browser using [Gradio Interface](https://c908c6d5
 
 We built and compared the following models:
 
-### ✅ CNN (Baseline)
+### <picture><source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f4a1/512.webp" type="image/webp"><img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2705/512.gif" alt="✅" width="20" height="20"></picture> CNN (Baseline)
 
 * 5 Conv1D + AvgPooling layers
 * Dense + Dropout
 * Output: Softmax over 5 classes
 
-### ✅ Pruned CNN
+### <picture><source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f4a1/512.webp" type="image/webp"><img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2705/512.gif" alt="✅" width="20" height="20"></picture> Pruned CNN
 
 * 50% sparsity pruning with TensorFlow Model Optimization Toolkit
 * Same accuracy, reduced size & latency
 
-### ✅ Quantized CNN
+### <picture><source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f4a1/512.webp" type="image/webp"><img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2705/512.gif" alt="✅" width="20" height="20"></picture> Quantized CNN
 
 * Post-training INT8 quantization
 * 96% smaller, 10x faster inference
 
 ---
 
-## 📈 Results
+## <picture><source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f3af/512.webp" type="image/webp"><img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f3af/512.gif" alt="🎯" width="25" height="25"></picture> Results
 
 <table>
 <tr>
@@ -86,7 +87,7 @@ We built and compared the following models:
 
 ---
 
-## 🛠 How to Use
+## <picture><source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.webp" type="image/webp"><img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="20" height="20"></picture> How to Use
 
 ### 🔧 Setup
 
@@ -110,7 +111,7 @@ gradio deploy     # Uploads to Hugging Face Spaces
 
 ---
 
-## 📦 Deployment Ready
+## <picture><source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f3c1/512.webp" type="image/webp"><img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2705/512.gif" alt="✅" width="20" height="20"></picture> Deployment Ready
 
 The quantized `.tflite` model can be deployed to:
 
@@ -135,7 +136,7 @@ Simply paste or upload a **360-point ECG beat** into the Gradio app. The model w
 
 ---
 
-## 🙏 Acknowledgements
+## <picture><source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1faf1_1f3fc_200d_1faf2_1f3fe/512.webp" type="image/webp"><img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2705/512.gif" alt="✅" width="20" height="20"></picture> Acknowledgements
 
 * [MIT-BIH Dataset - PhysioNet](https://physionet.org/content/mitdb/1.0.0/)
 * [TensorFlow Model Optimization Toolkit](https://www.tensorflow.org/model_optimization)
@@ -145,6 +146,7 @@ Simply paste or upload a **360-point ECG beat** into the Gradio app. The model w
 
 <div align="center">
 
-Made with ❤️ during a summer research internship at [IIIT Guwahati](https://www.iiitg.ac.in/) by [Ritanjit Das](https://github.com/ritanjit)
+Made with <picture><source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/2763_fe0f/512.webp" type="image/webp"><img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2705/512.gif" alt="✅" width="20" height="20"></picture> by [Ritanjit Das](https://github.com/ritanjit)
 
 </div>
+
