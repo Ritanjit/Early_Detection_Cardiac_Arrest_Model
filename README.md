@@ -57,26 +57,32 @@ We built and compared the following models:
 
 ## 📈 Results
 
+<table>
+<tr>
+<td align="center">
+
+#### MODEL BENCHMARKS
+
+</td>
+</tr>
+
+<tr>
+<td>
+
+  <img src="https://raw.githubusercontent.com/Ritanjit/Lightweight_Model_Early_Detection_Cardiac_Arrest/main/model_comparision.png" width="1100"/>
+
+   _These plots provide a clear view of trade-offs between performance and efficiency for deployment._
+
+</td>
+</tr>
+</table>
+
+
 | Model         | Accuracy | Latency (ms) | Size (MB) |
 | ------------- | -------- | ------------ | --------- |
 | Original CNN  | 0.974    | 11.24        | 5.9       |
 | Pruned CNN    | 0.971    | 8.87         | 3.0       |
 | Quantized CNN | 0.970    | 1.07         | 0.34      |
-
-Visualized comparisons are included in the notebook.
-
-### 📊 Visual Comparisons
-
-Interactive charts comparing **accuracy**, **latency**, and **model size** across the original, pruned, and quantized versions are provided in the notebook:
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/yourusername/your-repo-name/main/assets/accuracy_comparison.png" width="300"/>
-  <img src="https://raw.githubusercontent.com/yourusername/your-repo-name/main/assets/latency_comparison.png" width="300"/>
-  <img src="https://raw.githubusercontent.com/yourusername/your-repo-name/main/assets/size_comparison.png" width="300"/>
-</p>
-
-_These plots provide a clear view of trade-offs between performance and efficiency for deployment._
-
 
 ---
 
