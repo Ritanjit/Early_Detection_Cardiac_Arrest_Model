@@ -129,10 +129,10 @@ Simply paste or upload a **360-point ECG beat** into the Gradio app. The model w
 
 ## 🔭 Future Work
 
-* ✅ Add support for more heartbeat types
-* ✅ Convert to TFLite with Edge TPU compatibility
-* 🔄 Real-time ECG streaming integration
-* 🌐 API deployment via FastAPI / Streamlit
+* Add support for more heartbeat types
+* Convert to TFLite with Edge TPU compatibility
+* Real-time ECG streaming integration
+* API deployment via FastAPI / Streamlit
 
 ---
 
