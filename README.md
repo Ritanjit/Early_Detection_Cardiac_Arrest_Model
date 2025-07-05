@@ -44,15 +44,15 @@ We built and compared the following models:
 * Dense + Dropout
 * Output: Softmax over 5 classes
 
-### <picture><source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f4a1/512.webp" type="image/webp"><img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2705/512.gif" alt="✅" width="20" height="20"></picture> Pruned CNN
+### <picture><source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f4a1/512.webp" type="image/webp"><img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2705/512.gif" alt="✅" width="20" height="20"></picture> Knowledge Distillation (Lightweight Student Model)
 
-* 50% sparsity pruning with TensorFlow Model Optimization Toolkit
-* Same accuracy, reduced size & latency
+* Trains a smaller "student" model using predictions from the original "teacher" model.
+* Utilizes a simpler CNN architecture.
 
 ### <picture><source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f4a1/512.webp" type="image/webp"><img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2705/512.gif" alt="✅" width="20" height="20"></picture> Quantized CNN
 
 * Post-training INT8 quantization
-* 96% smaller, 10x faster inference
+* 51% smaller, 90x faster inference
 
 ---
 
@@ -81,9 +81,9 @@ We built and compared the following models:
 
 | Model         | Accuracy | Latency (ms) | Size (MB) |
 | ------------- | -------- | ------------ | --------- |
-| Original CNN  | 0.974    | 11.24        | 5.9       |
-| Pruned CNN    | 0.971    | 8.87         | 3.0       |
-| Quantized CNN | 0.970    | 1.07         | 0.34      |
+| Original CNN  | 0.988    | 68.166       | 1.165     |
+| Distilled CNN | 0.854    | 83.185       | 0.04      |
+| Quantized CNN | 0.988    | 0.366        | 0.568     |
 
 ---
 
